@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header.component'
 import {FaExchangeAlt, FaHeart, FaTimes, FaGithub, FaLinkedin, FaTwitter, FaFacebook} from 'react-icons/fa'
 
 class Home extends React.Component{
@@ -79,7 +80,8 @@ class Home extends React.Component{
 
    render(){
     return(
-        <>
+        <div className="wrapper">
+         <Header />
         <div className="container">
            <div className="currency">
              <select  name="fromCurr" defaultValue="EUR" onChange={this.handleChange}>
@@ -207,9 +209,9 @@ class Home extends React.Component{
         <div className="social-panel-container">
          <div className="social-panel">
            <p>Created with <FaHeart /> by EmmySteve</p>
-           <button className="close-btn" >
+           {/* <button className="close-btn" >
                <FaTimes />
-           </button>
+           </button> */}
            <h4>Get in touch on</h4>
            <ul>
                <li>
@@ -230,7 +232,7 @@ class Home extends React.Component{
         <button className="floating-btn" >
           Get in touch
         </button>
-        </>
+        </div>
     );
    }
 
