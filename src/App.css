@@ -241,7 +241,7 @@ select:focus, input:focus, button:focus{
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: none;
+    background-image: url('../src/assets/1rates.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
